@@ -12,4 +12,9 @@ describe('Plane',function(){
     plane.land();
     expect(plane.landed()).toEqual(true);
   });
+
+  it('plane can take off at an airport',function(){
+    plane.takeOff();
+    expect(plane.takenOff()).toEqual(false);
+  });
 });
